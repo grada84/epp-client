@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="SUGAR-EPP Client Pooling" basedir="." default="deploy">
+<project name="SUGAR-EPP Client Pooling" basedir="." default="dist">
+	<property name="dist" location="dist" />
 	<property name="build" location="bin" />
-	<property name="jarfile" value="epp-client-pooling" />
-<!--	<property name="jboss" location="${JBOSS61}/server/registry/deploy" />-->
-<!-- 	<property name="jboss_registro_restful" location="${JBOSS61RR}/server/registry/deploy" />-->	
+	<property name="jarfile" value="epp-client" />
  	<property name="jboss_sugar" location="${JBOSS61}/server/sugar/deploy" />
-
-	<target name="deploy" description="deploy application" depends="dist">
-		<!-- <copy todir="${jboss}" file="${dist}/${jarfile}.jar" />-->
-		<copy todir="${jboss_sugar}" file="${dist}/${jarfile}.jar" />
-		<!-- <copy todir="${jboss_registro_restful}" file="${dist}/${jarfile}.jar" /> -->
-	</target>
 
 	<target name="dist" description="generate the distribution">
 		<mkdir dir="${dist}" />
