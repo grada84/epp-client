@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="SUGAR-EPP Client Pooling" basedir="." default="dist">
+<project name="EPP Client" basedir="." default="dist">
 	<property name="dist" location="dist" />
 	<property name="build" location="bin" />
 	<property name="jarfile" value="epp-client" />
